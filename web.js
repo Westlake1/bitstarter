@@ -3,8 +3,8 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 //  response.send('Hello World2!');
-
-    var var fs = require('fs');
+     
+    var fs = require('fs');
     var content1 = fs.readFileSync('~/bitstarter/index.html', 'utf-8');
     response.send('content1');
 });
