@@ -5,7 +5,7 @@ app.get('/', function(request, response) {
 //  response.send('Hello World2!');
      
     var fs = require('fs');
-    var content1 = fs.readFileSync('~/bitstarter/index.html', 'utf-8');
+    var content1 = fs.readFileSync('index.html', 'utf-8');
     response.send('content1');
 });
 
