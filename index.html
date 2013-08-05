@@ -1,7 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--  8-5-2013 - JC -->
+<!-- <!DOCTYPE html> - JC -->
+<!-- saved from url=(0071)https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Findex-fluid.html -->
+<!DOCTYPE html PUBLIC "" "">
 <html lang="en">
-<!--  7-28-2013 - JC -->
   <head>
+	<META content="IE=10.000" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +15,16 @@
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+	<!-- start merge statements from HW 6-s1  jc -->	  
+	<LINK href="NEW%20downloaded%20HW6%20My%20First%20Bitstarter_files/startup_code_bootstrap-combined.no-icons.min.css" rel="stylesheet">
+	<LINK href="NEW%20downloaded%20HW6%20My%20First%20Bitstarter_files/font-awesome.css" rel="stylesheet">
+	<LINK href="NEW%20downloaded%20HW6%20My%20First%20Bitstarter_files/startup_code_social-buttons.css" rel="stylesheet">        
+	<SCRIPT src="NEW%20downloaded%20HW6%20My%20First%20Bitstarter_files/startup_code_jquery.js"></SCRIPT>
+	<SCRIPT src="NEW%20downloaded%20HW6%20My%20First%20Bitstarter_files/startup_code_bootstrap.js"></SCRIPT>
+    <LINK href="NEW%20downloaded%20HW6%20My%20First%20Bitstarter_files/css.css" rel="stylesheet" type="text/css">     
+	<LINK href="NEW%20downloaded%20HW6%20My%20First%20Bitstarter_files/css(1).css" rel="stylesheet" type="text/css">     	  
+	<!-- end merge - jc -->	  
     <style type="text/css">
 
       /* Large desktop */
@@ -98,7 +110,16 @@
       .footer a {
         color: #ccccff;
       }
+	  
+	 /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position   HR6 - step 2 - jc */
+	div.addthis_toolbox {
+	width:180px;
+	margin: 0 auto;
+	}
+	  
+	  
     </style>
+	<META name="GENERATOR" content="MSHTML 10.00.9200.16635"></HEAD>
   </head>
   <body>
 
@@ -113,12 +134,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Bitstarter</a>
+        <!--  <a class="brand" href="#">Bitstarter</a>  jc -->
+		  <A class="brand" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Findex-fluid.html#">Bitstarter</A>
           <div class="nav-collapse collapse">
             <ul class="nav">
+			<!-- replace by li below - hw6-s1 - jc 
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact">Contact</a></li> -->
+			  
+			<LI class="active"><A href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Findex-fluid.html#">Home</A></LI>
+			<LI><A href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Findex-fluid.html#about">About</A></LI>
+			<LI><A href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Findex-fluid.html#contact">Contact</A></LI>
+			  
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -146,15 +174,16 @@
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-<!--      <img class="img-polaroid" src="http://placehold.it/480x300">   ****image 1 **** -->
-<div class="video"><iframe src="http://player.vimeo.com/video/47000322?title=0&amp;byline=0&amp;portrait=0" width="480" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+ <!--     <img class="img-polaroid" src="http://placehold.it/480x300">   ****image 1 **** jc -->
+		<div class="video"> <iframe src="http://player.vimeo.com/video/47000322?title=0&amp;byline=0&amp;portrait=0" alt= "video" width="480" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
+		<!-- <DIV class="row-fluid">   jc-->
           <div class="span8 offset2">
-            <div class="statistics">
+            <div class="row-fluid statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
@@ -175,12 +204,14 @@
               </div>
             </div>
           </div>
+		  <!-- <DIV class="row-fluid">   jc-->
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
               <div class="bar bar-success" style="width: 60%;"></div>
               <div class="bar bar-warning" style="width: 40%;"></div>
+			  <!-- <DIV class="row-fluid">   jc-->
             </div>
           </div>
           <div class="span6 offset3 order">
@@ -188,11 +219,28 @@
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
+		  <!-- <DIV class="row-fluid">   jc-->
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+			
+			<!-- start adding buttons - jc -->
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		<a class="addthis_button_preferred_1"></a>
+		<a class="addthis_button_preferred_2"></a>
+		<!-- <a class="addthis_button_preferred_3"></a>
+		<a class="addthis_button_preferred_4"></a>  -->
+		<a class="addthis_button_compact"></a>
+		<a class="addthis_counter addthis_bubble_style"></a>
+		</div>
+		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fed6bf5788514f"></script>
+		<!-- AddThis Button END -->
+		<!-- end adding buttons - jc -->
+			
           </div>
         </div>
       </div>
@@ -204,7 +252,7 @@
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
 <!--     <img class="img-polaroid" src="http://placehold.it/480x300">   **** image 2 **** -->
-         <img class="img-polaroid" src="http://www.doublerobotics.com/img/use-museum.jpg">
+         <img class="img-polaroid" alt="image 2" src="http://www.doublerobotics.com/img/use-museum.jpg">
         </div>
         <div class="span5 copy">
           <p>
@@ -243,7 +291,7 @@ Vacation Double allows you to travel remotely while remaining conveniently at ho
         </div>
         <div class="span5 asset">
 <!--      <img class="img-polaroid" src="http://placehold.it/480x300">    **** image 3 **** -->
-          <img class="img-polaroid" src="http://www.doublerobotics.com/img/use-ken.jpg">
+          <img class="img-polaroid" alt="image 3" src="http://www.doublerobotics.com/img/use-ken.jpg">
         </div>
       </div>
 
